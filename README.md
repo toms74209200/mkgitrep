@@ -18,10 +18,10 @@ Select license.
 - `Apache`(Apache License)
 - `none`(The Unlicense)
 
-Make LICENSE.txt.
+Make LICENSE.
 Top of this file is described repository name picked from **current directory**.
 ```bash
-/foo$ cat ./LICENSE.txt
+/foo$ cat ./LICENSE
 foo
 ...
 ```
