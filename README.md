@@ -22,7 +22,9 @@ Make LICENSE.
 Top of this file is described repository name picked from **current directory**.
 ```bash
 /foo$ cat ./LICENSE
-foo
+MIT License
+
+foo Copyright (c) 2019 fullname <address>
 ...
 ```
 
