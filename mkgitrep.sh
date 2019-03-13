@@ -11,6 +11,7 @@ fullname="fullname"
 address="<address>"
 year=$(date "+%Y")
 project=$(basename $(pwd))
+script_dir=$(cd $(dirname $0); pwd)
 
 echo "select license :"
 read license_type
@@ -18,11 +19,11 @@ read license_type
 if [ " $license_type" = " mit" ]; then
     echo "MIT License\n" >> LICENSE
     echo "$project Copyright (c) $year $fullname $address\n" >> LICENSE
-    echo "$(cat mit_license.txt)" >> LICENSE
+    echo "$(cat $script_dir/mit_license.txt)" >> LICENSE
 elif [ " $license_type" = " apache" ]; then
     echo "Apache License\n" >> LICENSE
     echo "$project Copyright (c) $year $fullname $address\n" >> LICENSE
-    echo "$(cat apache_license.txt)" >> LICENSE
+    echo "$(cat $script_dir/apache_license.txt)" >> LICENSE
 elif [ " $license_type" = " non" ]; then
     echo "The Unlicense\n" > LICENSE
     echo "$project Copyright (c) $year $fullname $address\n" >> LICENSE
