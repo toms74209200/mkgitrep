@@ -1,0 +1,2 @@
+# mkgitrep
+Make git repository.
